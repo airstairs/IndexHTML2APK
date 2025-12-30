@@ -16,15 +16,22 @@
   <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
 <body class="fullscreen">
-
-
-
+  <div class="container">
+    <h1 id="my-heading" class="title">Hello World</h1>
+    <br>
+    <hr>
+    <button id="change-button">Click Here</button>
+  </div>
   <script src="js/main.js"></script>
-  <script src="js/three.min.js"></script>
-  <script src="js/myscene.js"></script>
   
-
-
+  <script>
+    function changeH1Text() {
+      const headingElement = document.getElementById('my-heading');
+      headingElement.textContent = 'Goodbye World';
+    }
+    const buttonElement = document.getElementById('change-button');
+    buttonElement.addEventListener('click', changeH1Text);
+  </script>
 </body>
 
 
