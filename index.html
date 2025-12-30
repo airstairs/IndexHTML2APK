@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="fullscreen">
+  <div class="container">
+    <h1 id="my-heading" class="title">Hello World</h1>
+    <br>
+    <hr>
+    <button id="change-button">Click Here</button>
+  </div>
+  
+  <script>
+    function changeH1Text() {
+      const headingElement = document.getElementById('my-heading');
+      headingElement.textContent = 'Goodbye World';
+    }
+    const buttonElement = document.getElementById('change-button');
+    buttonElement.addEventListener('click', changeH1Text);
+  </script>
+</body>
+
+
+
+
+
+</html>
