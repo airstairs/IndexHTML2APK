@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Hello World</title>
+  <title>Redirecting...</title>
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -14,24 +14,13 @@
   <meta name="apple-mobile-web-app-title" content="Hello World">
   <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
   <meta name="msapplication-TileColor" content="#FFFFFF">
+  <!-- Redirect to another localhost URL instantly -->       <meta http-equiv="refresh" content="0; url=http://local
+host:8888">
 </head>
 <body class="fullscreen">
-  <div class="container">
-    <h1 id="my-heading" class="title">Hello World</h1>
-    <br>
-    <hr>
-    <button id="change-button">Click Here</button>
-  </div>
+	<p>If you are not redirected, please <a href="http://lo
+calhost:8888">click here</a>.</p>
   <script src="js/main.js"></script>
-  
-  <script>
-    function changeH1Text() {
-      const headingElement = document.getElementById('my-heading');
-      headingElement.textContent = 'Goodbye World';
-    }
-    const buttonElement = document.getElementById('change-button');
-    buttonElement.addEventListener('click', changeH1Text);
-  </script>
 </body>
 
 
